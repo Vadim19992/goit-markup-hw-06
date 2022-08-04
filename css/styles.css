@@ -34,7 +34,6 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
-
 .container {
 width: 1200px;
 margin-left: auto;
@@ -130,7 +129,7 @@ position: absolute;
 bottom: -28px;
 left: 0;
 width: 100%;
-height: 2px;
+height: 4px;
 }
 
 .cont-tel-mail-head {
@@ -164,7 +163,6 @@ fill: currentColor;
 .header-tel-mail:hover,  
 .header-tel-mail:focus {
 color: var(--accent-color);
-border-bottom: 2px solid #2196F3;
 padding-bottom: 28px;
 }
 
@@ -235,6 +233,7 @@ padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 32px;
 padding-right: 32px;
+border: 0;
 margin-left: auto;
 margin-right: auto; 
 margin-top: 30px;
@@ -303,10 +302,6 @@ padding-bottom: 27px;
 background: rgba(47, 48, 58, 0.8);
 }
 
-
-
-
-
 .main-button {
 display: flex;
 justify-content: center;  
@@ -323,17 +318,11 @@ margin-top: 50px;
 flex-basis: calc((100%-60px) / 3);
 position: relative;
 display: block;
-
 }
-
-
 
 .section-mid-banner-inden {
 flex-basis: calc((100%-90px) / 4);
 }
-
-
-
 
 .banner-bagr {
 background: #FFFFFF;
@@ -379,6 +368,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 .mid-banner-new-li:hover,  
 .mid-banner-new-li:focus {
 border-color: var(--accent-color);
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
             
 .mid-banner-new-li:hover .mid-banner-list-icon,  
@@ -434,6 +424,7 @@ fill: currentColor;
 .social-list-link:hover,  
 .social-list-link:focus {
 background-color: var(--accent-color);
+/* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
     
 .social-list-link:hover .social-list-icon,  
@@ -473,8 +464,10 @@ padding-left: 22px;
 padding-top: 6px;
 padding-right: 22px;
 padding-bottom: 6px;
+border: 0;
 display: flex;
 align-items: center;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-li-text{
@@ -482,7 +475,7 @@ line-height: 0;
 }
 
 .section-li-text:hover .overlay {
-    transform: translate(0, 0);
+transform: translate(0, 0);
 }
     
 .shadow:hover {
@@ -490,9 +483,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 
 .section-li-overlay {
-    position: relative;
-    display: block;
-    overflow: hidden;
+position: relative;
+overflow: hidden;
 }
 
 .section-img-board {
@@ -615,6 +607,7 @@ display: flex;
 .footer-new-text-up {
 display: flex;
 }
+
 .footer-new-right-down{
 border-radius:50%;
 margin-right: 10px;
